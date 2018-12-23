@@ -1,6 +1,6 @@
 {% set name = "sphinxcontrib-programoutput" %}
-{% set version = "0.11" %}
-{% set sha256 = "cbec3ee1c3abd09e105115ab69cb5ade8ca1be9811565a844f973e93e0314837" %}
+{% set version = "0.13" %}
+{% set sha256 = "793f82618cf260da66c766923eeba387d18226afb647c9cd9e47825f74c2f514" %}
 
 package:
   name: {{ name|lower }}
