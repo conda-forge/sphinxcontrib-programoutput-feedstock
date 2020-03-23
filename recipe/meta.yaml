@@ -1,6 +1,6 @@
 {% set name = "sphinxcontrib-programoutput" %}
-{% set version = "0.15" %}
-{% set sha256 = "80dd5b4eab780a13ff2c23500cac3dbf0e04ef9976b409ef25a47c263ef8ab94" %}
+{% set version = "0.16" %}
+{% set sha256 = "0caaa216d0ad8d2cfa90a9a9dba76820e376da6e3152be28d10aedc09f82a3b0" %}
 
 package:
   name: {{ name|lower }}
@@ -35,7 +35,7 @@ about:
   license: BSD 2-clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Sphinx extension to include program output'
+  summary: Sphinx extension to include program output
 
   description: |
     A Sphinx extension to literally insert the output of arbitrary commands 
