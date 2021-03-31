@@ -5,9 +5,13 @@ Home: https://bitbucket.org/birkenfeld/sphinx-contrib
 
 Package license: BSD 2-clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinxcontrib-programoutput-feedstock/blob/master/LICENSE.txt)
 
 Summary: Sphinx extension to include program output
+
+Development: https://bitbucket.org/birkenfeld/sphinx-contrib
+
+Documentation: https://sphinxcontrib-programoutput.readthedocs.org/
 
 A Sphinx extension to literally insert the output of arbitrary commands
 into documents, helping you to keep your command examples up to date.
@@ -110,9 +114,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
