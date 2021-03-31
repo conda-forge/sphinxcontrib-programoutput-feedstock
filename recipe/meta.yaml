@@ -1,6 +1,6 @@
 {% set name = "sphinxcontrib-programoutput" %}
-{% set version = "0.16" %}
-{% set sha256 = "0caaa216d0ad8d2cfa90a9a9dba76820e376da6e3152be28d10aedc09f82a3b0" %}
+{% set version = "0.17" %}
+{% set sha256 = "300ee9b8caee8355d25cc74b4d1c7efd12e608d2ad165e3141d31e6fbc152b7f" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
     - sphinx
