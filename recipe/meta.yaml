@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - setuptools
     - sphinx
 
   run:
-    - python
+    - python >=3.6
     - sphinx
 
 test:
@@ -38,7 +38,7 @@ about:
   summary: Sphinx extension to include program output
 
   description: |
-    A Sphinx extension to literally insert the output of arbitrary commands 
+    A Sphinx extension to literally insert the output of arbitrary commands
     into documents, helping you to keep your command examples up to date.
   doc_url: https://sphinxcontrib-programoutput.readthedocs.org/
   dev_url: https://bitbucket.org/birkenfeld/sphinx-contrib
@@ -46,3 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - holgern
+    - anjos
