@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - python >=3.6
-    - setuptools
+    - pip
     - sphinx
 
   run:
