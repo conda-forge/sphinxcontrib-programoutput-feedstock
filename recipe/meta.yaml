@@ -25,6 +25,10 @@ requirements:
 test:
   imports:
     - sphinxcontrib.programoutput
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://bitbucket.org/birkenfeld/sphinx-contrib
