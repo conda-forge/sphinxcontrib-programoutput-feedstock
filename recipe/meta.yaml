@@ -1,44 +1,44 @@
 {% set name = "sphinxcontrib-programoutput" %}
-{% set version = "0.16" %}
-{% set sha256 = "0caaa216d0ad8d2cfa90a9a9dba76820e376da6e3152be28d10aedc09f82a3b0" %}
+{% set version = "0.17" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinxcontrib-programoutput-{{ version }}.tar.gz
+  sha256: 300ee9b8caee8355d25cc74b4d1c7efd12e608d2ad165e3141d31e6fbc152b7f
 
 build:
-  number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
-  build:
-    - python
-    - setuptools
-    - sphinx
-
+  host:
+    - python >=3.6
+    - pip
   run:
-    - python
-    - sphinx
+    - python >=3.6
+    - sphinx >=1.7.0
 
 test:
   imports:
     - sphinxcontrib.programoutput
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://bitbucket.org/birkenfeld/sphinx-contrib
-  license: BSD 2-clause
+  license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE
   summary: Sphinx extension to include program output
 
   description: |
-    A Sphinx extension to literally insert the output of arbitrary commands 
+    A Sphinx extension to literally insert the output of arbitrary commands
     into documents, helping you to keep your command examples up to date.
   doc_url: https://sphinxcontrib-programoutput.readthedocs.org/
   dev_url: https://bitbucket.org/birkenfeld/sphinx-contrib
@@ -46,3 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - holgern
+    - anjos
