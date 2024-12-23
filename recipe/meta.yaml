@@ -1,13 +1,14 @@
 {% set name = "sphinxcontrib-programoutput" %}
-{% set version = "0.17" %}
+{% set version = "0.18" %}
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinxcontrib-programoutput-{{ version }}.tar.gz
-  sha256: 300ee9b8caee8355d25cc74b4d1c7efd12e608d2ad165e3141d31e6fbc152b7f
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 09e68b6411d937a80b6085f4fdeaa42e0dc5555480385938465f410589d2eed8
 
 build:
   noarch: python
@@ -16,11 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.6
-    - sphinx >=1.7.0
+    - python >={{ python_min }}
+    - sphinx >=5
 
 test:
   imports:
@@ -28,6 +30,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
