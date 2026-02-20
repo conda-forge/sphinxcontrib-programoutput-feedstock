@@ -1,5 +1,5 @@
 {% set name = "sphinxcontrib-programoutput" %}
-{% set version = "0.18" %}
+{% set version = "0.19" %}
 {% set python_min = "3.8" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 09e68b6411d937a80b6085f4fdeaa42e0dc5555480385938465f410589d2eed8
+  sha256: 787ca068b7e1205ed492ea20a23a8e599c3b4edb8c43bacf564e5ec7c30c7dad
 
 build:
   noarch: python
