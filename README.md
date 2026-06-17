@@ -16,7 +16,6 @@ Documentation: https://sphinxcontrib-programoutput.readthedocs.org/
 A Sphinx extension to literally insert the output of arbitrary commands
 into documents, helping you to keep your command examples up to date.
 
-
 Current build status
 ====================
 
