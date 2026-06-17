@@ -16,15 +16,15 @@ Documentation: https://sphinxcontrib-programoutput.readthedocs.org/
 A Sphinx extension to literally insert the output of arbitrary commands
 into documents, helping you to keep your command examples up to date.
 
-
 Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3573&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sphinxcontrib-programoutput-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/sphinxcontrib-programoutput-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/sphinxcontrib-programoutput-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
